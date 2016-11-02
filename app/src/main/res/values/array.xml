@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="regions">
+        <item>US</item>
+        <item>EU</item>
+
+    </string-array>
+
+    <string-array name="classes">
+        <item>Warrior</item>
+        <item>Paladin</item>
+        <item>Rogue</item>
+        <item>Hunter</item>
+        <item>Shaman</item>
+        <item>Mage</item>
+        <item>Priest</item>
+        <item>Death Knight</item>
+        <item>Druid</item>
+        <item>Demon Hunter</item>
+        <item>Warlock</item>
+        <item>Monk</item>
+    </string-array>
+
+    <string-array name="races">
+        <item>Human</item>
+        <item>Orc</item>
+        <item>Dwarf</item>
+        <item>Night Elf</item>
+        <item>Undead</item>
+        <item>Tauren</item>
+        <item>Gnome</item>
+        <item>Troll</item>
+        <item>Goblin</item>
+        <item>Blood Elf</item>
+        <item>Draenei</item>
+        <item>Worgen</item>
+        <item>Pandaren</item>
+    </string-array>
+
+</resources>

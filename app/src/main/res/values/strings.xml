@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">WoWProfile</string>
+
+    <string name="realm_name">Realm Name</string>
+    <string name="search_name_field">Character Name</string>
+    <string name="char_name">Name</string>
+    <string name="button_search">Search</string>
+    <string name="char_level">110</string>
+    <string name="char_class">Warrior</string>
+    <string name="char_guild_name">Guild</string>
+
+    <string name="char_gender_male">Male</string>
+    <string name="char_gender_female">Female</string>
+
+    <string name="char_class_warrior">Warrior</string>
+    <string name="char_class_paladin">Paladin</string>
+    <string name="char_class_rogue">Rogue</string>
+    <string name="char_class_hunter">Hunter</string>
+    <string name="char_class_shaman">Shaman</string>
+    <string name="char_class_mage">Mage</string>
+    <string name="char_class_priest">Priest</string>
+    <string name="char_class_death_knight">Death Knight</string>
+    <string name="char_class_druid">Druid</string>
+    <string name="char_class_demon_hunter">Demon Hunter</string>
+    <string name="char_class_warlock">Warlock</string>
+    <string name="char_class_monk">Monk</string>
+
+
+    <string name="char_race_human">Human</string>
+    <string name="char_race_orc">Orc</string>
+    <string name="char_race_dwarf">Dwarf</string>
+    <string name="char_race_night_elf">Night Elf</string>
+    <string name="char_race_undead">Undead</string>
+    <string name="char_race_tauren">Tauren</string>
+    <string name="char_race_gnome">Gnome</string>
+    <string name="char_race_troll">Troll</string>
+    <string name="char_race_goblin">Goblin</string>
+    <string name="char_race_blood_elf">Blood Elf</string>
+    <string name="char_race_draenei">Draenei</string>
+    <string name="char_race_worgen">Worgen</string>
+    <string name="char_race_pandaren">Pandaren</string>
+
+    <string name="char_faction_alliance">Alliance</string>
+    <string name="char_faction_horde">Horde</string>
+
+    <string name="tab_search">Search</string>
+    <string name="tab_favorite">Favorites</string>
+    <string name="emptyList">No character found</string>
+    <string name="msg_favorite_removed">Favorite Removed</string>
+    <string name="msg_favorite_added">Favorited</string>
+    <string name="msg_undo">Undo</string>
+    <string name="msg_guild_not_found">No Guild Found</string>
+    <string name="txtClass">Class:</string>
+    <string name="txtStr">Strength:</string>
+    <string name="txtAgility">Agility:</string>
+    <string name="txtIntelligence">Intelligence:</string>
+    <string name="txtHealth">Health:</string>
+    <string name="txtPowerType">Power Type:</string>
+    <string name="txtPower">Power:</string>
+    <string name="txtGuildName">Guild:</string>
+    <string name="txtLevel">Level:</string>
+    <string name="txtFaction">Faction:</string>
+    <string name="txtGender">Gender:</string>
+    <string name="txtRace">Race:</string>
+    <string name="search_again">Search Again</string>
+
+
+</resources>

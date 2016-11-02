@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/backgroundDark"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        app:srcCompat="@color/EdtTextBack"
+        android:layout_marginTop="37dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:id="@+id/imgCharacterAvatar"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_below="@+id/imgCharacterAvatar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:id="@+id/txtCharacterName"
+        android:textStyle="normal|bold"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/class_warrior"
+        android:id="@+id/imgClass"
+        android:layout_marginBottom="13dp"
+        android:layout_marginLeft="10dp"
+        android:layout_above="@+id/textViewCharacterClass"
+        android:layout_alignLeft="@+id/textViewCharacterClass"
+        android:layout_alignStart="@+id/textViewCharacterClass" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewCharacterFaction"
+        android:layout_alignBaseline="@+id/txtCharacterName"
+        android:layout_alignBottom="@+id/txtCharacterName"
+        android:layout_alignLeft="@+id/imgFaction"
+        android:layout_alignStart="@+id/imgFaction"
+        android:textStyle="normal|bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="32dp"
+        app:srcCompat="@drawable/faction_horde"
+        android:id="@+id/imgFaction"
+        android:layout_alignTop="@+id/imgClass"
+        android:layout_toRightOf="@+id/txtGuild"
+        android:layout_toEndOf="@+id/txtGuild" />
+
+    <TextView
+        android:text="@string/txtGuildName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtGuild"
+        android:layout_marginLeft="10dp"
+        android:textStyle="normal|bold"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewCharacterInt"
+        android:layout_marginLeft="8dp"
+        android:layout_alignBaseline="@+id/txtIntelligence"
+        android:layout_alignBottom="@+id/txtIntelligence"
+        android:layout_toRightOf="@+id/textViewCharacterFaction"
+        android:layout_toEndOf="@+id/textViewCharacterFaction" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewCharacterAgi"
+        android:layout_alignBaseline="@+id/txtAgility"
+        android:layout_alignBottom="@+id/txtAgility"
+        android:layout_alignLeft="@+id/textViewCharacterInt"
+        android:layout_alignStart="@+id/textViewCharacterInt" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewCharacterStr"
+        android:layout_alignBaseline="@+id/txtStrenght"
+        android:layout_alignBottom="@+id/txtStrenght"
+        android:layout_alignLeft="@+id/textViewCharacterAgi"
+        android:layout_alignStart="@+id/textViewCharacterAgi" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewCharacterGuild"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/textViewCharacterStr"
+        android:layout_alignStart="@+id/textViewCharacterStr" />
+
+    <TextView
+        android:text="@string/txtPowerType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPowerType"
+        android:textStyle="normal|bold"
+        android:layout_alignBaseline="@+id/textViewCharacterAgi"
+        android:layout_alignBottom="@+id/textViewCharacterAgi"
+        android:layout_alignRight="@+id/txtHealth"
+        android:layout_alignEnd="@+id/txtHealth" />
+
+    <TextView
+        android:text="@string/txtStr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtStrenght"
+        android:layout_marginLeft="10dp"
+        android:textStyle="normal|bold"
+        android:fontFamily="sans-serif"
+        android:layout_alignBaseline="@+id/textViewCharacterHealth"
+        android:layout_alignBottom="@+id/textViewCharacterHealth"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewCharacterPower"
+        android:layout_marginRight="10dp"
+        android:layout_alignBaseline="@+id/txtPower"
+        android:layout_alignBottom="@+id/txtPower"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:id="@+id/textViewCharacterPowerType"
+        android:layout_alignBaseline="@+id/txtPowerType"
+        android:layout_alignBottom="@+id/txtPowerType"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewCharacterHealth"
+        android:layout_marginTop="42dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/textViewCharacterLevel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewCharacterLevel"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="@string/txtHealth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtHealth"
+        android:textStyle="normal|bold"
+        android:layout_alignBaseline="@+id/textViewCharacterHealth"
+        android:layout_alignBottom="@+id/textViewCharacterHealth"
+        android:layout_toLeftOf="@+id/imgClass"
+        android:layout_toStartOf="@+id/imgClass" />
+
+    <TextView
+        android:text="@string/txtLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtLevel"
+        android:textStyle="normal|bold"
+        android:layout_above="@+id/textViewCharacterHealth"
+        android:layout_alignLeft="@+id/txtHealth"
+        android:layout_alignStart="@+id/txtHealth" />
+
+    <TextView
+        android:text="@string/txtAgility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAgility"
+        android:layout_marginLeft="10dp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/txtStrenght"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="46dp" />
+
+    <TextView
+        android:text="@string/txtPower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPower"
+        android:layout_marginLeft="10dp"
+        android:textStyle="normal|bold"
+        android:layout_alignBaseline="@+id/textViewCharacterInt"
+        android:layout_alignBottom="@+id/textViewCharacterInt"
+        android:layout_alignRight="@+id/txtPowerType"
+        android:layout_alignEnd="@+id/txtPowerType" />
+
+    <TextView
+        android:text="@string/txtGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="19dp"
+        android:id="@+id/txtGender"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtGender"
+        android:layout_alignLeft="@+id/textViewCharacterInt"
+        android:layout_alignStart="@+id/textViewCharacterInt"
+        android:id="@+id/textViewCharacterGender" />
+
+    <TextView
+        android:text="@string/txtIntelligence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtIntelligence"
+        android:textStyle="normal|bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/txtAgility"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/txtRace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewCharacterGender"
+        android:layout_alignRight="@+id/txtPower"
+        android:layout_alignEnd="@+id/txtPower"
+        android:id="@+id/txtRace"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtRace"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/textViewCharacterRace" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewCharacterClass"
+        android:layout_alignBaseline="@+id/txtCharacterName"
+        android:layout_alignBottom="@+id/txtCharacterName"
+        android:layout_alignRight="@+id/textViewCharacterLevel"
+        android:layout_alignEnd="@+id/textViewCharacterLevel"
+        android:layout_marginRight="23dp"
+        android:layout_marginEnd="23dp"
+        android:textStyle="normal|bold" />
+
+</RelativeLayout>

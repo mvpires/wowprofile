@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryDark">#0288D1</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBrown">#795548</color>
+    <color name="background">#9E9E9E</color>
+    <color name="backgroundDark">#616161</color>
+    <color name="EdtTextBack">#d7ccc8</color>
+
+    <color name="colorDeathKnight">#C41F3B</color>
+    <color name="colorDemonHunter">#A330C9</color>
+    <color name="colorDruid">#FF7D0A</color>
+    <color name="colorHunter">#ABD473</color>
+    <color name="colorMage">#69CCF0</color>
+    <color name="colorMonk">#00FF96</color>
+    <color name="colorPaladin">#F58CBA</color>
+    <color name="colorPriest">#FFFFFF</color>
+    <color name="colorRogue">#FFF569</color>
+    <color name="colorShaman">#0070DE</color>
+    <color name="colorWarlock">#9482C9</color>
+    <color name="colorWarrior">#C79C6E</color>
+</resources>
