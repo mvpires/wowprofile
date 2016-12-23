@@ -12,6 +12,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
+import android.widget.Spinner;
 
 import com.mvpires.wowprofile.http.CharacterSearchTask;
 import com.mvpires.wowprofile.model.Character;
@@ -38,6 +40,7 @@ public class CharacterListFragment extends Fragment implements LoaderManager.Loa
     Button mSearchAgainEmpty;
     View mView;
     View mRelativeSearchField;
+    ProgressBar mProgressBarCharSearch;
     boolean mFirstSearch = true;
 
 
@@ -69,6 +72,10 @@ public class CharacterListFragment extends Fragment implements LoaderManager.Loa
                              Bundle savedInstanceState) {
         mView = inflater.inflate(R.layout.fragment_character_list, container, false);
 
+        mProgressBarCharSearch = (ProgressBar)mView.findViewById(R.id.progressBarCharSearch);
+        mProgressBarCharSearch.setVisibility(View.GONE);
+
+
         mRecyclerView  = (RecyclerView)mView.findViewById(R.id.recyclerView_characters_list);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         mRelativeSearchField = mView.findViewById(R.id.relativeSearchField);
@@ -89,6 +96,7 @@ public class CharacterListFragment extends Fragment implements LoaderManager.Loa
             @Override
             public void onClick(View v) {
                 Bundle bundle = new Bundle();
+                mProgressBarCharSearch.setVisibility(View.VISIBLE);
 
                 String nameField = mEdtNameField.getText().toString().trim().toLowerCase();
                 String realmField = mEdtRealmField.getText().toString().trim().toLowerCase();
@@ -147,6 +155,7 @@ public class CharacterListFragment extends Fragment implements LoaderManager.Loa
     @Override
     public void onLoadFinished(Loader<Character> loader, Character data) {
         mCharacters.clear();
+        mProgressBarCharSearch.setVisibility(View.GONE);
         if(data != null)
         {
             mCharacters.add(data);
